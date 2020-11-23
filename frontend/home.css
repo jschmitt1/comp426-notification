@@ -1,6 +1,9 @@
 body{
-    background-color: rgb(145, 178, 240);
-    
+    background-color: rgb(111, 81, 167);
+}
+
+html, body {
+    height: 100%
 }
 
 #root{
@@ -10,9 +13,10 @@ body{
 #sec-header {
     font-size: xx-large;
     font-weight: 700;
+    color: white;
 }
 
 #search-streamer-container {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
 }
