@@ -8,59 +8,55 @@
     <body>
         <header>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            
+    
             <nav class="navbar is-info" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="/">
-                        <h1 style='font-size : "2em"; font-weight : "bold"'>StreamAlert</h1>
-                    </a>
-    
-                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
+                        <h1>StreamAlert</h1>
                     </a>
                 </div>
     
-                <div id="navbarBasicExample" class="navbar-menu">
-        
-    
+                <div id="navbar-basic" class="navbar-menu">
                     <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons" >
-                        <a class="button is-info" style="background-color : 'hsl(204, 86%, 27%)'; border-color : 'hsl(204, 86%, 27%)'">
-                            Settings
-                        </a>
+                        <div class="navbar-item">
+                            <div class="buttons" >
+                            <a class="button is-info" style="background-color : 'hsl(204, 86%, 27%)'; border-color : 'hsl(204, 86%, 27%)'">
+                                Settings
+                            </a>
                         </div>
                     </div>
                     <div class="navbar-item">
                         <div class="buttons" >
-                        <a class="button is-info" style="background-color : 'hsl(204, 86%, 27%)'; border-color : 'hsl(204, 86%, 27%)'">
-                            Logout
-                        </a>
+                            <a class="button is-info" style="background-color : 'hsl(204, 86%, 27%)'; border-color : 'hsl(204, 86%, 27%)'">
+                                Logout
+                            </a>
                         </div>
                     </div>
                     </div>
                 </div>
-                </nav>
+            </nav>
         </header>
 
         <br>
 
         <section class="section" id="root">
-            <div id="search-streamer-container">
-                <h3 id="sec-header">Search for a Streamer</h3>
+            <div class="container" id="search-streamer-container">
+                <label class="label" id="sec-header">Search for a Streamer</label>
                 <form id="search-form">
-                    <input type="text" placeholder="Streamer Name">
-                    <button type="submit">Search</button>
+                    <input class="input" type="text" placeholder="Enter Streamer Name">
+                    <div class="field">
+                        <div class="control">
+                          <button class="button is-primary">Submit</button>
+                        </div>
+                    </div>
                 </form>
             </div>
             <br>
-            <div id="live-now">
+            <div class="container" id="live-now">
                 <h2 id="sec-header">Live Now</h2>
             </div>
             <br>
-            <div id="offline-now">
+            <div class="container" id="offline-now">
                 <h2 id="sec-header">Offline</h2>
             </div>
         </section>
