@@ -1,3 +1,11 @@
 body{
     background-color: cornflowerblue;
 }
+
+#root{
+    text-align: center;
+}
+
+#sec-header {
+    font-size: xx-large;
+}
