@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" type="text/css" src="public/css/home.css" />
+        <link rel="stylesheet" type="text/css" src="/node_modules/bulma/css/bulma.css" />
+    </head>
+    
+        
+    <body>
         <header>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" type="text/css" src="/node_modules/bulma/css/bulma.css" />
-            <link rel="stylesheet" type="text/css" src="public/css/home.css" />
+            
             <nav class="navbar is-info" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="/">
                         <h1 style='font-size : "2em"; font-weight : "bold"'>StreamAlert</h1>
                     </a>
-
+    
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
-
+    
                 <div id="navbarBasicExample" class="navbar-menu">
-       
-
+        
+    
                     <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons" >
@@ -39,97 +45,22 @@
                 </div>
                 </nav>
         </header>
+
+        <br>
         
-        <body style="background-color : 'hsl(204, 86%, 100%)'">
         <section class="section">
-                <div class="container">
-                    <h1 class="title">Live Now</h1>
-                </div>
-            </section>
-            <section>
-                <div class="container">
-                    <div class="columns is-multiline">
-                        <div class="column is-one-third">
-                            <div class="tile is-parent is-vertical">
-                                <article class="tile is-child  notification" style='background-color: "hsl(204, 86%, 86%)"'>
-                                <div class="columns">
-                                    <div class="column is-half">
-                                        <p class="title">Pewdiepie</p>
-                                        <p> Is Live!</p>
-                                    </div>
-                                    <div class="column">
-                                        <div style='float: "right"'>
-                                            <div class="video__icon">
-                                                <div class="circle--outer" ></div>
-                                                <div class="circle--inner"></div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                
-                                <div class="columns">
-                                    <div class="column is-half">
-                                        <div>
-                                            <input type="checkbox" id="switch1" class="switch"></input>
-                                            <label for="switch1">&nbsp;</label>
-                                        </div>
-                                        <p>Email Me</p>
-                                    </div>
-                                    <div class="column">
-                                        <div class="buttons" style='float: "right"'>
-                                            <button class="button" style='background-color:"#e50040"; opacity:.85'>Delete</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                
-                                </article>
-                                <article class="tile is-child notification is-info">
-                                <p class="title">Name</p>
-                                <p class="subtitle">Bottom tile</p>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="column is-one-third">
-                            <div class="tile is-parent is-vertical">
-                                <article class="tile is-child notification is-info">
-                                <p class="title">Name</p>
-                                <p class="subtitle">Top tile</p>
-                                </article>
-                                <article class="tile is-child notification is-info">
-                                <p class="title">Name</p>
-                                <p class="subtitle">Bottom tile</p>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="column is-one-third">
-                            <div class="tile is-parent is-vertical">
-                                <article class="tile is-child notification is-info">
-                                <p class="title">Name</p>
-                                <p class="subtitle">Top tile</p>
-                                </article>
-                                <article class="tile is-child notification is-info">
-                                <div class="video__icon">
-                                    <div class="circle--outer"></div>
-                                    <div class="circle--inner"></div>
-                                </div>
-                                <p class="subtitle">Bottom tile</p>
-                                </article>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="section">
-                <div class="container">
-                    <h1 class="title">Offline</h1>
-                    <button class="button is-info">Hi</button>
-
-                </div>
-            </section>
-        </body>
+            <div id="search-streamer">
+                <h3>Search for a Streamer</h3>
+                <input type="text" placeholder="Streamer Name">
+            </div>
+            <br>
+            <div id="live-now">
+                <h2>Live Now</h2>
+            </div>
+            <br>
+            <div id="offline-now">
+                <h2>Offline</h2>
+            </div>
+        </section>
+    </body>
 </html>
