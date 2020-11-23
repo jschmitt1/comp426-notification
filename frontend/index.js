@@ -13,3 +13,18 @@ var server = app.listen(8081, function () {
    
    console.log("Example app listening at http://%s:%s", host, port)
 })
+
+
+
+$(function() {
+    renderLiveNow();
+    renderOffline();
+});
+
+export async function renderLiveNow() {
+    const $root = $(`#root`);
+}
+
+export async function renderOffline() {
+    const $root = $(`#root`);
+}
