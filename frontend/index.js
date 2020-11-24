@@ -19,8 +19,8 @@ var server = app.listen(8081, function () {
 
 
 $(function() {
-    //renderLiveNow();
-    //renderOffline();
+    renderLiveNow();
+    renderOffline();
 });
 
 $( "#search-form" ).keyup(function(event){
@@ -40,14 +40,11 @@ export async function autoCompleteName(search) {
         data: body,
         url: requestURL
     });
-    //console.log(result);
-    //console.log(result.data.body.data[0].display_name);
 
     $(`#suggestions`).empty();  //empty out any items that might be left from last keypress
     let nameList = result.data.body.data;
     let suggestList = ``;
     let len = (nameList.length > 5) ? 5 : nameList.length; //get at most 5 suggestions
-    //console.log(len);
     for(let i = 0; i < len; i++){
         suggestList += `<option value="${nameList[i].display_name}">`;
     }
@@ -56,12 +53,41 @@ export async function autoCompleteName(search) {
 
 
 
-
-
 export async function renderLiveNow() {
-    const $root = $(`#root`);
+    console.log("rendering Live Results");
+    let requestURL = 'http://3.88.71.149:3000/getStreamers';
+    const result = await axios({
+        method: 'get',
+        url: requestURL
+    });
+    //console.log(result);
+
+    let liveStreamers = ``;
+    for(let i = 0; i < 3; i++){
+        let name = results.live[i];
+        //let name = "jabroniTony"; //debug
+        liveStreamers += `<li id="live-item">${name} <button class="button is-danger" id="stop-follow">Stop Following</button></li>`;
+    }
+    
+    $("#live-list").append(liveStreamers);
+
+    console.log("done rendering live results");
 }
 
 export async function renderOffline() {
-    const $root = $(`#root`);
+    //console.log("rendering Offline Results");
+    let requestURL = 'http://3.88.71.149:3000/getStreamers';
+    const result = await axios({
+        method: 'get',
+        url: requestURL
+    });
+
+    let liveStreamers = ``;
+    for(let i = 0; i < result.offline.length; i++){
+        let name = results.offline[i];
+        //let name = "jabroniTony"; //debug
+        liveStreamers += `<li id="offline-item">${name} <button class="button is-danger" id="stop-follow">Stop Following</button></li>`;
+    }
+    
+    $("#offline-list").append(liveStreamers);
 }

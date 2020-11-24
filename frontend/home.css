@@ -20,3 +20,24 @@ html, body {
     margin-left: 35%;
     margin-right: 35%;
 }
+
+#live-item, #offline-item {
+    color: black;
+    background-color: white;
+    text-align: center;
+    border: white;
+    border-radius: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 20%;
+    margin-left: 20%;
+
+}
+
+#live-list-container, #live-list {
+    text-align: center;
+}
+
+#stop-follow {
+    margin-left: auto;
+}
