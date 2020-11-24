@@ -1,0 +1,21 @@
+{
+  "name": "streamalert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin Schmitt",
+  "license": "ISC",
+  "dependencies": {
+    "carina": "^0.11.2",
+    "connect-mongo": "^3.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongodb": "^3.5.5",
+    "request": "^2.88.2",
+    "twilio": "^3.52.0",
+    "ws": "^7.2.3"
+  }
+}
