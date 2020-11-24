@@ -59,19 +59,17 @@ export async function renderLiveNow() {
     const result = await axios({
         method: 'get',
         url: requestURL
-    });
+    }); 
     //console.log(result);
 
     let liveStreamers = ``;
-    for(let i = 0; i < 3; i++){
+    for(let i = 0; i < result.live.length; i++){
         let name = results.live[i];
         //let name = "jabroniTony"; //debug
-        liveStreamers += `<li id="live-item">${name} <button class="button is-danger" id="stop-follow">Stop Following</button></li>`;
+        liveStreamers += `<li id="live-item"><div>${name}</div><div><button class="button is-danger" id="stop-follow">Stop Following</button></div></li>`;
     }
     
     $("#live-list").append(liveStreamers);
-
-    console.log("done rendering live results");
 }
 
 export async function renderOffline() {
@@ -86,7 +84,7 @@ export async function renderOffline() {
     for(let i = 0; i < result.offline.length; i++){
         let name = results.offline[i];
         //let name = "jabroniTony"; //debug
-        liveStreamers += `<li id="offline-item">${name} <button class="button is-danger" id="stop-follow">Stop Following</button></li>`;
+        liveStreamers += `<li id="offline-item"><div>${name}</div><div><button class="button is-danger" id="stop-follow">Stop Following</button></div></li>`;
     }
     
     $("#offline-list").append(liveStreamers);

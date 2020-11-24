@@ -25,19 +25,24 @@ html, body {
     color: black;
     background-color: white;
     text-align: center;
+    
     border: white;
     border-radius: 15px;
     margin-top: 3px;
     margin-bottom: 3px;
-    margin-right: 20%;
-    margin-left: 20%;
-
+    margin-left: -95px;
+    width: 500%;
 }
 
 #live-list-container, #live-list {
     text-align: center;
 }
 
-#stop-follow {
-    margin-left: auto;
+#live-list, #offline-list {
+    display: inline-table;
+}
+
+#wrapper {
+    text-align: center;
+    margin: auto;
 }
