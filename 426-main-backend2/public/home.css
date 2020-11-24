@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(111, 81, 167);
+}
+
+html, body {
+    height: 100%
+}
+
+#root{
+    text-align: center;
+}
+
+#sec-header {
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
+}
+
+#search-streamer-container {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#live-item, #offline-item {
+    color: black;
+    background-color: white;
+    text-align: center;
+    
+    border: white;
+    border-radius: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: -5.6em;
+    width: 500%;
+}
+
+#live-list-container, #live-list {
+    text-align: center;
+}
+
+#live-list, #offline-list {
+    display: inline-table;
+}
+
+#wrapper {
+    text-align: center;
+    margin: auto;
+}
+
+#followed {
+    margin-left: 42%;    
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Stream Alert Signup</title>
+
+        <!-- Include links to CSS stylesheets below -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div id="login">
+            <div class="login-card">
+                <div class="card-title">
+                    <h1>Sign Up for Stream Alert</h1>
+                </div>
+
+                <div class="content">
+                    <form id="login-form">
+                        <input id="email" type="email" name="email" title="email" placeholder="Email" required autofocus>
+                        <input id="user" name="user" title="Username" placeholder="Username" required autofocus>
+                        <input id="password" type="password" name="password" title="password" placeholder="Password" required>
+                        <input id="phone"  name="phone" title="phone" placeholder="Phone Number" required>
+                        <div class="field">
+                            <div class="control">
+                                <button id="submit" type="submit" class="btn btn-primary">Signup</button>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button class="btn btn-primary" onclick='location.href="/login"'>Go to Login</button>
+                            </div>
+                        </div>
+
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Include links to JavaScript files below -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

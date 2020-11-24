@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="home.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    </head>
+    
+    <body>
+
+        <header>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+            <nav class="navbar is-success" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <h1>StreamAlert </h1>
+                    </a>
+                </div>
+    
+                <div id="navbar-basic" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons" >
+                            <a class="button is-info" style="background-color : 'hsl(204, 86%, 27%)'; border-color : 'hsl(204, 86%, 27%)'">
+                                Settings
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item">
+                        <div class="buttons" >
+                            <a class="button is-info" style="background-color : 'hsl(204, 86%, 27%)'; border-color : 'hsl(204, 86%, 27%)'">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <br>
+
+        <section class="section" id="root">
+            <div class="container" id="search-streamer-container">
+                <label class="label" id="sec-header">Search for a Streamer</label>
+                <form id="search-form">
+                    <input class="input" list="suggestions" id="streamer-search-input" type="text" placeholder="Enter Streamer Name">
+                    <datalist id="suggestions"></datalist>
+                    <div class="field">
+                        <div class="control">
+                          <button id="followed" class="button is-link">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <div id="wrapper">
+                <div class="container" id="live-now">
+                    <h2 id="sec-header">Live Now</h2>
+                    <div id="live-list-container">
+                        <ul id="live-list"></ul>
+                    </div>
+                </div>
+                <br>
+                <div class="container" id="offline-now">
+                    <h2 id="sec-header">Offline</h2>
+                    <div id="offline-list-container">
+                        <ul id="offline-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+        <script src="/render.js"></script>
+    </body>
+</html>
