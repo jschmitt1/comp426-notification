@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.21.0",
     "bulma": "^0.9.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jquery": "^3.5.1"
   },
   "devDependencies": {},
   "scripts": {
